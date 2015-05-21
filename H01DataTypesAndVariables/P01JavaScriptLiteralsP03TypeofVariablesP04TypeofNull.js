@@ -1,6 +1,4 @@
  //P01Assign all the possible JavaScript literals to different variables.
- //P03Try typeof on all variables you created.
- //P04Create null, undefined variables and try typeof on them.
 
  //Primitive types:
  //Primitive values define immutable values (values, which are incapable of being changed).
@@ -31,7 +29,7 @@
  //A symbol is a unique and immutable data type and may be used as an identifier for object properties.
  //This is an experimental technology, part of the ECMAScript 6 (Harmony) proposal.
  //At this point it only works on the latest versions of Chrome and Firefox.
- var mySymbol = Symbol('key');
+ //var mySymbol = Symbol('abc');
 
  //Objects:
  //In JavaScript, objects can be seen as a collection of properties.
@@ -59,17 +57,46 @@
  //It can also be used to assign specific values
  var myNumberMax = Number.MAX_VALUE;
 
- //Date objects are based on a time value that is the number of milliseconds since 1 January, 1970 UTC.
- var myDate = new Date();
-
  //Math is a built-in object that has properties and methods for mathematical constants and functions.
  //Not a function object.
  var myMathRandom = Math.random();
  var myMathRound = Math.round(4.7);
  var myPi = Math.PI;
 
+ //Date objects are based on a time value that is the number of milliseconds since 1 January, 1970 UTC.
+ var myDate = new Date();
+
 //The JavaScript Array global object is a constructor for arrays, which are high-level, list-like objects.
  var myFruits = ['apple', 'banana', 'cucumber'];
 
  //and more..
 
+ //P03Try typeof on all variables you created.
+ //P04Create null, undefined variables and try typeof on them.
+
+ var myVariables =
+ [
+     myUndefined,
+     myNull,
+     myBool,
+     myNumber,
+     myString,
+     myStingObject,
+     //mySymbol,
+     myObjectEmpty,
+     myObjectDoggy,
+     myFunction,
+     myNumberValid,
+     myNumberNotValid,
+     myNumberMax,
+     myMathRandom,
+     myMathRound,
+     myPi,
+     myDate,
+     myFruits
+ ];
+
+ myVariables.forEach(function (variable)
+ {
+     console.log(variable + ' is of type ' + typeof(variable));
+ });

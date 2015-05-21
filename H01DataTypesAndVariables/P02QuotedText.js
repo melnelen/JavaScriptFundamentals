@@ -1,3 +1,8 @@
-/**
- * Created by C5218286 on 21-May-15.
- */
+//Create a string variable with quoted text in it.
+//For example: `'How you doin'?', Joey said'.
+
+var singleQotes = '\'How you doin\'?\', Joey said';
+var doubleQuotes = "'How you doin'?', Joey said";
+
+console.log(singleQotes);
+console.log(doubleQuotes);
